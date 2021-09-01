@@ -1,0 +1,9 @@
+@media screen and (max-width:135px){
+
+    .box-Produtos{
+        display: flex;
+        flex-direction:  column;
+        width: 100px;
+    }
+
+}
