@@ -66,8 +66,17 @@
 <body>
    <main>
         <div>
-             <h1>Cadastre seu filho</h1>
-                 <form action="">
+             <h1>Cadastre-se</h1>
+                 <form class="Formulario" action="">
+                   
+                    
+                    <span>Você é: </span>
+                    <select name="Cargo">
+                        <option selected value="Responsavel">Responsável</option>
+                        <option value="Funcionário">Funcionário</option>
+                        <option value="Aluno">Aluno</option>     
+                    </select>
+                
                     <label for="name">
                       <span>Nome</span>
                       <input type="text" id="name" name="name">      
@@ -76,12 +85,18 @@
                     <label for="email">
                      <span>E-mail</span>
                      <input type="text" id="email" name="email">      
-                   </label>
-                   <label for="password">
+                    </label>
+
+                    <label for="password">
                       <span>Senha</span>
                        <input type="text" id="password" name="password">      
                     </label>      
-
+                    
+                    <label for="password">
+                      <span>Confirme sua senha</span>
+                       <input type="text" id="password" name="password">      
+                    </label>
+                    
                     <input type="submit" value="Cadastre-se">
 
                 </form>         

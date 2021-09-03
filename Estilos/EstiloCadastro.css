@@ -5,6 +5,10 @@
 
 h1{
     font-family: "Poppins";
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
 }
 
 main form{
@@ -48,8 +52,30 @@ main form input[type = "submit"]{
     font-size: 1.1rem;
 
 }
+
 main form input[type = "submit"]:hover{
     background: rgb(196, 67, 67);
     color:black;
     transition: all .3s ease-in-out;
+}
+
+
+main form select{
+    background:#161924 ;
+    width: 320px;
+    height: 60px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid #040B18;
+    border-radius: 8px;
+
+}
+
+main form span{
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    align-items: flex-start;
 }

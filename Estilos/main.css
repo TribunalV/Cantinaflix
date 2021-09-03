@@ -12,7 +12,7 @@
 
 
 body{
-    background: var(--preta);
+    background: black;
     font-family: 'Times New Roman', Times, serif;
     color: white;
 
@@ -23,6 +23,12 @@ header .container{
     border: 1px solid black;
 
 }
+
+.imagem{
+    width: 200px;
+    height: 70px;
+}
+
 
 header .logo{
     margin-left: 5px;
@@ -58,7 +64,7 @@ header .container{
     
     align-self: flex-end;
 
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(https://images.freeimages.com/images/premium/previews/3513/35135220-cookery-seamless-background.jpg);
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(http://es.fordesigner.com/download/vector/2015/10/29.jpg);
     background-repeat: round;
     background-size: 300px;
     
@@ -69,6 +75,8 @@ header .container{
     justify-content: center;
     align-items: flex-start;
     padding-left: 65px;
+    
+    color: black;
 }
 
 .Principal .sub{
@@ -116,4 +124,29 @@ header .container{
     margin-top: 50px;
 }
 
+
+nav a{
+    padding-left: 30px;
+}
+
+.item {
+	overflow: hidden;
+    height: 350px;
+    max-height: 100%;
+}
+
+.item img {
+	max-width: 100%;
+    max-height: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.item:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+    
+}
 

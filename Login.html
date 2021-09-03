@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-
+    <link rel="stylesheet" href="Estilos/EstiloCadastro.css">
     <link rel="stylesheet" href="Estilos/responsive.css">
     <title>Faça seu Login</title>
     <style>
@@ -41,9 +41,10 @@
         }
 
         button:hover{
-            background: #f33f48;
+            background: #E50914;
+            opacity: 50%;
             cursor: pointer;
-
+            transition: all .3s ease-in-out;
         }    
         
         a{
@@ -67,19 +68,26 @@
 
 </head>
 <body>
-    <div>
-         <h1> Login </h1>
-         <br>
-            <input type="text" placeholder="Matrícula">
-            <br><br>
-            <input type="password" placeholder="Senha">
-            <br><br>
-            <button> Entrar </button>
-            <p><a href="EsqueceuSenha.html"> Esqueceu sua Senha?</a></p>
-            <a href="Cadastro.html"> Cadastre seu filho</a>
+    <main>
+        <div>
+             <h1>Login</h1>
+                 <form action="">
+                    <label for="name">
+                      <span>Matrícula</span>
+                      <input type="name" id="name" name="name">      
+                    </label>               
+                   <label for="password">
+                      <span>Senha</span>
+                       <input type="password" id="password" name="password">      
+                    </label>      
 
-     </div>
+                    <input type="submit" value="Conectar-se">
 
+                </form>         
+            
+
+           </div>
+    </main>
     
 </body>
 </html>
