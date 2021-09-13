@@ -7,6 +7,7 @@
     
     <link rel="stylesheet" href="Estilos/EstiloCadastro.css">
     <link rel="stylesheet" href="Estilos/responsive.css">
+    <script src="Js/main.js"></script>
     <title>Faça seu Cadastro</title>
     <style>
         body{
@@ -67,7 +68,7 @@
    <main>
         <div>
              <h1>Cadastre-se</h1>
-                 <form class="Formulario" action="">
+                 <form class="Formulario" action="" onsubmit="return validateForm()" method="POST">
                    
                     
                     <span>Você é: </span>
@@ -89,13 +90,14 @@
 
                     <label for="password">
                       <span>Senha</span>
-                       <input type="text" id="password" name="password">      
+                       <input type="password" id="password" name="password">      
                     </label>      
                     
                     <label for="password">
                       <span>Confirme sua senha</span>
-                       <input type="text" id="password" name="password">      
+                       <input type="password" id="password" name="password">      
                     </label>
+                    
                     
                     <input type="submit" value="Cadastre-se">
 
