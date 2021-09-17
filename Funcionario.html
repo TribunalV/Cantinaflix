@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Cantina</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="Estilos/main2.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
 </head>
 <body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
     
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="Interface2.html"><img class ="logo"src="Recursos/CANTINAFLIX_1.png"></a></li>
+        <li><a href="Compra.html">Produtos</a></li>
+        <li><a href="Perfil.html">Gerenciar Responsável</a></li>
+        <li><a href="Perfil.html">Consultar saldo</a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+        
+        <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+    <div class="container text-center">
+      <h1><b>CantinaFlix</b></h1>      
+      <p>O melhor lanche se encontra aqui!</p>
+    </div>
+</div>
+
+<div>
+    <form action="" method="GET" name="BloquearProdutos">
+        <div>
+          <p><b> Gerenciar Produtos: </b></p>
+
+         <div class="gerenciaProdutos">
+            <table id="my_table_id"
+            data-url="data/url.json"
+            data-id-field="id"
+            data-editable-emptytext="Default empty text."
+            data-editable-url="/my/editable/update/path">
+            <thead>
+              <tr>
+                <th class="col-md-1" data-field="id" data-sortable="true" data-align="center">#</th>
+                <th class="col-md-4" data-field="name" data-editable="true">Name</th>
+                <th class="col-md-7" data-field="description" data-editable="true" data-editable-emptytext="Custom empty text.">Description</th>
+              </tr>
+            </thead>
+          </table>
+         </div>
+          
+        
+          
+        </div>
+</div>
+  
+
+<footer class="container-fluid text-center">
+  <p>Todos os direitos reservados © CantinaFlix</p>
+</footer>
+
 </body>
 </html>

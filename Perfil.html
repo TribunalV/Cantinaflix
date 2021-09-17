@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Perfil do Responsável</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/Estilos/EstiloPerfil.css">
+
+  <link rel="stylesheet" href="Estilos/main2.css">
+  <link rel="stylesheet" href="Estilos/EstiloPerfil.css">
+ 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+  
+ 
 </head>
 <body>
 
@@ -20,49 +25,173 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
+    
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="active"><a href="Interface2.html"><img class ="logo"src="Recursos/CANTINAFLIX_1.png"></a></li>
+        
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        
+        <li><a href="Cadastro.html"><span class="glyphicon glyphicon-usd"></span>R$</a></li>
+        <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
       </ul>
     </div>
   </div>
 </nav>
-  
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
+
+<div class="jumbotron">
+    <div class="container text-center">
+      <h1><b>CantinaFlix</b></h1>      
+      <p>O melhor lanche se encontra aqui!</p>
     </div>
-    <div class="col-sm-8 text-left"> 
-      <h1>Welcome</h1>
-      <p></p>
-      <hr>
-      <h3>Test</h3>
-      <p></p>
-    </div>
-    <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
-      </div>
-    </div>
-  </div>
 </div>
 
+<div class="dados">
+
+</div>
+
+<!-- -->
+<table>
+  <tr>
+    <td>Nome do Responsável: </td>
+    <td> *NOME* </td>
+  </tr>
+  <!--Fazer validação PHP para o número de filhos-->
+  <tr>
+    <td>Nome do primeiro Filho: </td>
+    <td>*NOME*</td>
+
+  </tr>
+  <tr>
+    <td>Nome do segundo Filho: </td>
+    <td>*NOME*</td>
+
+  </tr>
+  <tr>
+    <td>Nome do terceiro Filho: </td>
+    <td>*NOME*</td>
+
+  </tr>
+  <!--Fazer validação PHP para o número de filhos-->
+  <tr>
+    <td>Email: </td>
+    <td>*EMAIL*</td>
+
+  </tr>
+  <tr>
+    <td>CPF:</td>
+    <td>*CPF*</td>
+
+  </tr>
+  <tr>
+    <td>Telefone: </td>
+    <td>*TELEFONE*</td>
+
+  </tr>
+</table>
+
+<br><br> 
+<div>
+ <p> <b>Clique no botão para mostrar o seu saldo</p> </b>
+ <button onclick="" type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Mostrar</button>
+ <div id="demo" class="collapse"><b> *SALDO*</b></div>
+</div>
+
+<br><br> 
+
+<form action="" method="GET" name="BloquearProdutos">
+  <div>
+    <p><b> Bloquear Produtos: </b></p>
+    <p>Informe a matrícula do aluno:</p> <input type="number" name="matrícula">
+    <p>Informe os produtos que deseja tirar:</p>
+    
+  
+    <div class="divBloquearProdutos">
+      <div class="bloquearProdutos">
+        <input class="form-check-input" name="Brownie" type="checkbox" id="inlineCheckbox1" value="Brownie">
+        <label class="form-check-label" for="inlineCheckbox1">Brownie</label>
+      </div>
+      <div class="bloquearProdutos">
+        <input class="form-check-input" name="Cachorro Quente" type="checkbox" id="inlineCheckbox1" value="Cachorro Quente">
+        <label class="form-check-label" for="inlineCheckbox1">Cachorro Quente</label>
+      </div>
+      <div class="bloquearProdutos">
+        <input class="form-check-input" name="Coxinha" type="checkbox" id="inlineCheckbox1" value="Coxinha">
+        <label class="form-check-label" for="inlineCheckbox1">Coxinha</label>
+      </div>
+    </div>
+    <div class="divBloquearProdutos">
+      <div class="bloquearProdutos">
+        <input class="form-check-input" name="Hamburguer" type="checkbox" id="inlineCheckbox1" value="Hamburguer">
+        <label class="form-check-label" for="inlineCheckbox1">Hamburguer</label>
+      </div>
+      <div class="bloquearProdutos">
+        <input class="form-check-input" name="Pizza" type="checkbox" id="inlineCheckbox1" value="Pizza">
+        <label class="form-check-label" for="inlineCheckbox1">Pizza</label>
+      </div>
+      <div class="bloquearProdutos">
+        <input class="form-check-input" name="Enroladinho de presunto" type="checkbox" id="inlineCheckbox1" value="Enroladinho de presunto">
+        <label class="form-check-label" for="inlineCheckbox1">Enroladinho de presunto</label>
+      </div>
+  </div>
+    
+  <input type="submit"> 
+</form>
+
+<br><br>
+
+<form action="Consumo.php" method="GET">
+
+  <div>
+    <p><b>Verificar Consumo do aluno</b></p>
+    <p>Informe a matrícula do aluno:</p> <input type="number" name="matrícula">
+    <input type="submit">
+  </div>
+</form>
+
+<br><br>
+
+<form class="Formulario" action="" onsubmit="return validateForm()" method="POST">
+   
+  <p><b>Cadastrar novo Aluno</b></p>
+
+  <label for="name">
+    <span>Nome do Aluno</span>
+    <input type="text" id="nameA" name="nameA">      
+  </label>
+
+  <label for="email">
+   <span>E-mail</span>
+   <input type="email" id="emailA" name="emailA">      
+  </label>
+  
+  <label for="cpf">
+    <span>Informe o login do Aluno</span>
+    <input type="text" id="loginA" name="loginA">      
+  </label>
+
+  <label for="password">
+    <span>Senha</span>
+     <input type="password" id="passwordA" name="passwordA">      
+  </label>      
+  
+  <label for="password">
+    <span>Confirme sua senha</span>
+     <input type="password" id="passwordA" name="passwordA">      
+  </label>
+
+  
+
+  
+  <input type="submit" value="Cadastre-se">
+
+</form>
+
+
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <p>Todos os direitos reservados © CantinaFlix</p>
 </footer>
 
 </body>
