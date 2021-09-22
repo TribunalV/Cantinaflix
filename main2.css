@@ -15,11 +15,7 @@ footer{
     padding: 25px;
 }
 
-.navbar {
-    margin-bottom: 0;
-    border-radius: 0;
-}
-  
+
 header .container{
     display: flex;
     flex-direction: row;
@@ -102,11 +98,4 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-.divBloquearProdutos{
-    display: flex;
-}
-
-.bloquearProdutos{
-    padding: 15px;
-}
 

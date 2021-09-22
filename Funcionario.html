@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Cantina</title>
+  <title>Perfil do Funcionário</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="Estilos/main2.css">
+  <link rel="stylesheet" href="Estilos/EstiloPerfil.css">
  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
+ 
 </head>
 <body>
 
@@ -28,14 +30,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="Interface2.html"><img class ="logo"src="Recursos/CANTINAFLIX_1.png"></a></li>
-        <li><a href="Compra.html">Produtos</a></li>
-        <li><a href="Perfil.html">Gerenciar Responsável</a></li>
-        <li><a href="Perfil.html">Consultar saldo</a></li>
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
-        
         <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
       </ul>
     </div>
@@ -49,36 +46,220 @@
     </div>
 </div>
 
-<div>
-    <form action="" method="GET" name="BloquearProdutos">
-        <div>
-          <p><b> Gerenciar Produtos: </b></p>
 
-         <div class="gerenciaProdutos">
-            <table id="my_table_id"
-            data-url="data/url.json"
-            data-id-field="id"
-            data-editable-emptytext="Default empty text."
-            data-editable-url="/my/editable/update/path">
-            <thead>
-              <tr>
-                <th class="col-md-1" data-field="id" data-sortable="true" data-align="center">#</th>
-                <th class="col-md-4" data-field="name" data-editable="true">Name</th>
-                <th class="col-md-7" data-field="description" data-editable="true" data-editable-emptytext="Custom empty text.">Description</th>
-              </tr>
-            </thead>
-          </table>
-         </div>
-          
-        
-          
-        </div>
-</div>
+<!-- -->
+<table>
+  <tr>
+    <td>Nome do Responsável: </td>
+    <td> *NOME* </td>
+  </tr>
+  <!--Fazer validação PHP para o número de filhos-->
+  <tr>
+    <td>Nome do primeiro Filho: </td>
+    <td>*NOME*</td>
+
+  </tr>
+  <tr>
+    <td>Nome do segundo Filho: </td>
+    <td>*NOME*</td>
+
+  </tr>
+  <tr>
+    <td>Nome do terceiro Filho: </td>
+    <td>*NOME*</td>
+
+  </tr>
+  <!--Fazer validação PHP para o número de filhos-->
+  <tr>
+    <td>Email: </td>
+    <td>*EMAIL*</td>
+
+  </tr>
+  <tr>
+    <td>CPF:</td>
+    <td>*CPF*</td>
+
+  </tr>
+  <tr>
+    <td>Telefone: </td>
+    <td>*TELEFONE*</td>
+
+  </tr>
+</table>
+
+<br><br>
+
+
+<div class="ContainerPerfil">
+
+  <div class="ContainerDiv">
+ 
+    <p class="Titulos">Consultar Saldo</p>
+    <p class="SubTitulos">Informe a matrícula do Aluno</p>
+    <label for="matricula">
+      <span class="SubTitulos">Matrícula: </span>
+      <input type="text" id="matricula" name="matricula">      
+    </label><br>
+   <p class=""><b>Clique no botão abaixo para mostrar o saldo do aluno</p> </b>
+   <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Mostrar</button>
+   <div id="demo" class="collapse"><b> *SALDO*</b></div>
+  </div>
   
 
-<footer class="container-fluid text-center">
-  <p>Todos os direitos reservados © CantinaFlix</p>
-</footer>
+<br><br> 
+
+<form action="" method="GET" name="BloquearProdutos">
+ <div class="ContainerDiv">
+    <p class="Titulos"><b>Gerenciar Produtos : </b></p>
+    
+    <span class="SubTitulos">Informe a ação:</span>
+    <br><br><br>
+    
+    <div><label><input type="radio" id="add" name="add" value="add" data-toggle="collapse" data-target="#demo1"  ></input>Adicionar</label></div>
+    <div><label><input type="radio" id="add" name="add" value="add" data-toggle="collapse" data-target="#demo2"  ></input>Remover</label></div>
+    <div><label><input type="radio" id="add" name="add" value="add" data-toggle="collapse" data-target="#demo3"  ></input>Alterar</label></div>
+      
+    
+    <div id="demo1">
+      <form>
+        <label for="code">
+          <span class="SubTitulos">Código: </span>
+          <input type="text" id="codigo" name="codigo">      
+        </label><br>
+      
+        <label for="name">
+          <span class="SubTitulos">Nome do Produto: </span>
+          <input type="text" id="nameProduct" name="nameProduct">      
+        </label><br>
+      
+        <label for="Ingridients">
+         <span class="SubTitulos">Ingredientes: </span>
+         <input type="text" id="ingridients" name="ingridients">      
+        </label><br>
+      
+        <label for="price">
+          <span class="SubTitulos">Preço: </span>
+           <input type="text" id="price" name="price">      
+        </label><br>      
+        
+        <!--Upload de foto-->
+        <!-- <label for="password">
+          <span class="SubTitulos">Mande a foto: </span>     
+        </label><br> -->   
+        
+        <button class="btn btn-primary">Adicionar</button>
+      </form>
+    </div>
+
+    <div id="demo2">
+      <label for="code">
+        <span class="SubTitulos">Código: </span> 
+        <input type="text" id="codigo" name="codigo">
+      </label><br>
+      <label for="code">
+        <span class="SubTitulos">Nome: </span> 
+        <input type="text" id="nameProduct" name="nameProduct">
+      </label><br>
+      
+      <button class="btn btn-primary">Remover</button>
+    </div>
+
+    <!--Alteração de dados = PHP -->
+    <!-- <div id="demo3">
+      <form>
+        <label for="code">
+          <span class="SubTitulos">Código: </span>
+          <input type="text" id="codigo" name="codigo">      
+        </label><br>
+      
+        <label for="name">
+          <span class="SubTitulos">Nome do Produto: </span>
+          <input type="text" id="nameProduct" name="nameProduct">      
+        </label><br>
+      
+        <label for="Ingridients">
+         <span class="SubTitulos">Ingredientes: </span>
+         <input type="text" id="ingridients" name="ingridients">      
+        </label><br>
+      
+        <label for="price">
+          <span class="SubTitulos">Preço: </span>
+           <input type="text" id="price" name="price">      
+        </label><br>      
+        <button class="btn btn-primary">Adicionar</button>
+      </form> -->
+
+    </div>
+</form>
+
+<br><br>
+
+<div class="ContainerDiv">
+  <p class="Titulos"><b>Cadastrar novo Responsável</b></p>
+
+  <br>
+  
+  <form class="" action="" onsubmit="return validateForm()" method="POST"> 
+    
+    <label for="CPF">
+      <span class="SubTitulos">CPF: </span>
+      <input type="text" id="CPF" name="CPF">      
+    </label><br>
+  
+    <label for="nameR">
+      <span class="SubTitulos">Nome do Responsável: </span>
+      <input type="text" id="nameR" name="nameR">      
+    </label><br>
+  
+    <label for="email">
+     <span class="SubTitulos">E-mail: </span>
+     <input type="email" id="emailR" name="emailR">      
+    </label><br>
+    
+    <label for="login">
+      <span class="SubTitulos">Informe o login do Responsável: </span>
+      <input type="text" id="loginR" name="loginR">      
+    </label><br>
+  
+    <label for="password">
+      <span class="SubTitulos">Senha: </span>
+       <input type="password" id="passwordR" name="passwordR">      
+    </label><br>      
+    
+    <label for="password">
+      <span class="SubTitulos">Confirme sua senha: </span>
+       <input type="password" id="passwordR" name="passwordR">      
+    </label><br>
+
+    <label for="telefone">
+      <span class="SubTitulos">Telefone: </span>
+       <input type="text" id="telefone" name="telefone">      
+    </label><br>
+
+    <input class="btn btn-primary" type="submit" value="Cadastre-se">
+</div>
+
+<br><br>
+
+<div class="ContainerDiv">
+ 
+  <p class="Titulos">Consultar Depósitos</p>
+  <p class="SubTitulos">Informe a matrícula do Aluno</p>
+  <label for="matricula">
+    <span class="SubTitulos">Matrícula: </span>
+    <input type="text" id="matricula" name="matricula">      
+  </label><br>
+ <p class=""><b>Clique no botão abaixo para mostrar os depósitos do aluno</p> </b>
+ <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Mostrar</button>
+ <div id="demo" class="collapse"><b> *DEPOSITOS*</b></div>
+</div>
+
+
+</div>
+
+</form>
+
+</div>
 
 </body>
 </html>

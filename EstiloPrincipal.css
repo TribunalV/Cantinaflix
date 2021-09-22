@@ -129,3 +129,54 @@ a:hover{
     color: white;
     cursor: pointer;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+ 
+.row.content {height: 450px}
+ 
+.ContainerPerfil{
+    font-family: "Poppins";
+    max-width: 100%;
+    background-color: rgba(34, 32, 32, 0.9);
+    padding: 80px;
+    border-radius: 15px;
+    color: white;   
+}
+
+.Titulos{
+    
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.collapse{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.SubTitulos{
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.ContainerDiv{
+   
+    max-width: 100%;
+    background-color: rgba(17, 17, 17, 0.795);
+    padding: 80px;
+    border-radius: 15px;
+    color: white;   
+
+}
+input{
+    background:#161924 ;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: white;
+    font-size: 2rem;
+    border: 1px solid #040B18;
+    border-radius: 8px;
+}

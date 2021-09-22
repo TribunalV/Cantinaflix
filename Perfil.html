@@ -48,9 +48,6 @@
     </div>
 </div>
 
-<div class="dados">
-
-</div>
 
 <!-- -->
 <table>
@@ -92,22 +89,27 @@
   </tr>
 </table>
 
-<br><br> 
-<div>
- <p> <b>Clique no botão para mostrar o seu saldo</p> </b>
- <button onclick="" type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Mostrar</button>
+<br><br>
+
+
+<div class="ContainerPerfil">
+
+<div class="ContainerDiv">
+ <p class="Titulos"><b>Clique no botão abaixo para mostrar o seu saldo</p> </b>
+ <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Mostrar</button>
  <div id="demo" class="collapse"><b> *SALDO*</b></div>
 </div>
 
 <br><br> 
 
 <form action="" method="GET" name="BloquearProdutos">
-  <div>
-    <p><b> Bloquear Produtos: </b></p>
-    <p>Informe a matrícula do aluno:</p> <input type="number" name="matrícula">
-    <p>Informe os produtos que deseja tirar:</p>
+ <div class="ContainerDiv">
+    <p class="Titulos"><b> Bloquear Produtos: </b></p>
     
-  
+    <span class="SubTitulos">Informe a matrícula do aluno:</span>
+     <input type="text" name="matrícula"> <br><br><br>
+    <span class="SubTitulos">Informe os produtos que deseja tirar:</span> <br> <br> 
+
     <div class="divBloquearProdutos">
       <div class="bloquearProdutos">
         <input class="form-check-input" name="Brownie" type="checkbox" id="inlineCheckbox1" value="Brownie">
@@ -122,6 +124,7 @@
         <label class="form-check-label" for="inlineCheckbox1">Coxinha</label>
       </div>
     </div>
+   
     <div class="divBloquearProdutos">
       <div class="bloquearProdutos">
         <input class="form-check-input" name="Hamburguer" type="checkbox" id="inlineCheckbox1" value="Hamburguer">
@@ -135,64 +138,58 @@
         <input class="form-check-input" name="Enroladinho de presunto" type="checkbox" id="inlineCheckbox1" value="Enroladinho de presunto">
         <label class="form-check-label" for="inlineCheckbox1">Enroladinho de presunto</label>
       </div>
-  </div>
+    </div>
     
-  <input type="submit"> 
-</form>
-
-<br><br>
-
-<form action="Consumo.php" method="GET">
-
-  <div>
-    <p><b>Verificar Consumo do aluno</b></p>
-    <p>Informe a matrícula do aluno:</p> <input type="number" name="matrícula">
-    <input type="submit">
+    <input class="btn btn-primary" type="submit"> 
   </div>
+
+  
 </form>
 
 <br><br>
 
-<form class="Formulario" action="" onsubmit="return validateForm()" method="POST">
-   
-  <p><b>Cadastrar novo Aluno</b></p>
+<div class="ContainerDiv">
+  <p class="Titulos"><b>Cadastrar novo Aluno</b></p>
 
-  <label for="name">
-    <span>Nome do Aluno</span>
-    <input type="text" id="nameA" name="nameA">      
-  </label>
-
-  <label for="email">
-   <span>E-mail</span>
-   <input type="email" id="emailA" name="emailA">      
-  </label>
+  <br>
   
-  <label for="cpf">
-    <span>Informe o login do Aluno</span>
-    <input type="text" id="loginA" name="loginA">      
-  </label>
-
-  <label for="password">
-    <span>Senha</span>
-     <input type="password" id="passwordA" name="passwordA">      
-  </label>      
+  <form class="" action="" onsubmit="return validateForm()" method="POST"> 
+    
+    <label for="matricula">
+      <span class="SubTitulos">Matrícula: </span>
+      <input type="text" id="matricula" name="matricula">      
+    </label><br>
   
-  <label for="password">
-    <span>Confirme sua senha</span>
-     <input type="password" id="passwordA" name="passwordA">      
-  </label>
-
+    <label for="name">
+      <span class="SubTitulos">Nome do Aluno: </span>
+      <input type="text" id="nameA" name="nameA">      
+    </label><br>
   
-
+    <label for="email">
+     <span class="SubTitulos">E-mail: </span>
+     <input type="email" id="emailA" name="emailA">      
+    </label><br>
+    
+    <label for="cpf">
+      <span class="SubTitulos">Informe o login do Aluno: </span>
+      <input type="text" id="loginA" name="loginA">      
+    </label><br>
   
-  <input type="submit" value="Cadastre-se">
+    <label for="password">
+      <span class="SubTitulos">Senha: </span>
+       <input type="password" id="passwordA" name="passwordA">      
+    </label><br>      
+    
+    <label for="password">
+      <span class="SubTitulos">Confirme sua senha: </span>
+       <input type="password" id="passwordA" name="passwordA">      
+    </label><br>
+
+    <input class="btn btn-primary" type="submit" value="Cadastre-se">
+</div>
 
 </form>
-
-
-<footer class="container-fluid text-center">
-  <p>Todos os direitos reservados © CantinaFlix</p>
-</footer>
+</div>
 
 </body>
 </html>

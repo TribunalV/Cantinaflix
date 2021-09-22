@@ -7,7 +7,7 @@
     <title>Consumo do aluno </title>
 </head>
 <body>
-    <?php
+    
 
 
 
