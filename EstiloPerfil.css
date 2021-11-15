@@ -48,3 +48,15 @@ input{
     border: 1px solid #040B18;
     border-radius: 8px;
 }
+
+tr,td{
+    background-color: black;
+}
+
+.close{
+    color: white;
+}
+
+#alt{
+    display: none;
+}

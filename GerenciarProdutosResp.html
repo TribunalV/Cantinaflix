@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bloquear Produtos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="Estilos/main2.css">
+  <link rel="stylesheet" href="Estilos/EstiloPerfil.css">
+ 
+  
+ 
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a><span class="glyphicon glyphicon-usd"></span> R$ 100,00</a></li>
+          <li><a href="GerenciarAlunos.html"><span class="glyphicon glyphicon-user"></span> Gerenciar Alunos Relacionados</a></li>
+          <li><a href="GerenciarProdutosResp.html"><span class="glyphicon glyphicon-cutlery"></span> Gerenciar Produtos</a></li>
+          <li><a href="Deposito.html"><span class="glyphicon glyphicon-credit-card"></span> Depósito</a></li>    
+          <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br><br><br>
+
+
+
+<div class="ContainerPerfil">
+<div class="ContainerDiv">
+    <p class="Titulos"> Tabela de Produtos </p>
+    <table class="table table-dark">
+      <tbody>
+        <tr>
+          
+          <th>Fotos</th>
+          <th>Produtos</th>
+          <th>Código</th>
+          <th>Preço</th>
+        </tr>
+        <tr id="tr1">
+          
+          <td><img style="width: 90px;" src="Recursos/1.jpg" alt=""></td>
+          <td>Brownie</td>
+          <td>001</td>
+          <td>R$ 5,00 
+              <button onclick="Bloquear1()" id="botao1" type="button" class="close" aria-label="Close">
+                 <span style="margin-left: 10px;" class="glyphicon glyphicon-ban-circle"></span>
+              </button>
+              
+              
+          </td>
+        </tr>
+        <tr id="tr2">
+          
+          <td><img style="width: 90px;" src="Recursos/2.jpg" alt=""></td>
+          <td>Cachorro Quente</td>
+          <td>002</td>
+          <td>R$ 5,00     
+              <button onclick="Bloquear2()" id="botao2" type="button" class="close" aria-label="Close">
+                 <span style="margin-left: 10px;" class="glyphicon glyphicon-ban-circle"></span>
+              </button>
+              
+          </td>
+        </tr>
+        <tr id="tr3">
+
+          <td><img style="width: 90px;" src="Recursos/3.png" alt=""></td>
+          <td>Coxinha</td>
+          <td>002</td>
+          <td>R$ 5,00
+              <button onclick="Bloquear3()" id="botao3" type="button" class="close" aria-label="Close">
+                 <span style="margin-left: 10px;" class="glyphicon glyphicon-ban-circle"></span>
+              </button>
+             
+          </td>
+        </tr>
+        <tr id="tr4">
+          
+          <td><img style="width: 90px;" src="Recursos/4.jpeg" alt=""></td>
+          <td>Hamburguer</td>
+          <td>003</td>
+          <td>R$ 5,00
+              <button onclick="Bloquear4()" id="botao4" type="button" class="close" aria-label="Close">
+                 <span style="margin-left: 10px;" class="glyphicon glyphicon-ban-circle"></span>
+              </button>
+              
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div> 
+
+
+</body>
+
+<script src="Js/gerenciaprodutos.js" ></script>
+</html>
+
+

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gerenciar Responsáveis</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="Estilos/main2.css">
+  <link rel="stylesheet" href="Estilos/EstiloPerfil.css">
+ 
+  
+ 
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="ConsultarSaldo.html"><span class="glyphicon glyphicon-usd"></span> Consultar Saldo</a></li>
+        <li><a href="GerenciarProdutos.html"><span class="glyphicon glyphicon-cutlery"></span> Gerenciar Produtos</a></li>
+        <li><a href="GerenciarResponsavel.html"><span class="glyphicon glyphicon-user"></span> Gerenciar Responsáveis</a></li>
+        <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>  
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br><br><br>
+
+
+
+<div class="ContainerPerfil">
+<div class="ContainerDiv">
+    <p class="Titulos"> Tabela de Responsáveis </p> 
+    <p class="SubTitulos"> Pesquise por CPF: </p> 
+    
+    <label><span class="SubTitulos">CPF: </span>
+      <input type="text" id="codigo" name="codigo"> </label>
+      <button class="btn btn-primary" form="">Buscar</button> <br><br>
+    <table class="table table-dark">
+        <tbody>
+          <tr>
+            
+            <th>CPF</th>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Email</th>
+            <th>Login</th>
+            <th>Senha</th>
+          </tr>
+          
+          <tr id="tr1">
+            <td>000.000.000.00</td>
+            <td>Paulo</td>
+            <td>(00)00000-0000</td>
+            <td>Paulo@gmail.com</td>
+            <td>0001</td>
+            <td>1234
+                <button onclick="Botao1()" id="botao1" type="button" class="close" aria-label="Close">
+                    <span style="margin-left: 10px;" class="glyphicon glyphicon-remove"></span>
+                </button>
+                <button onclick="Alterar1()" id="botao1" type="button" class="close" aria-label="Close">
+                    <span  class="glyphicon glyphicon-repeat"></span>
+                </button>
+                
+            </td>
+          </tr>
+          <tr id="tr2">
+            <td>000.000.000.00</td>
+            <td>Matheus</td>
+            <td>(00)00000-0000</td>
+            <td>Matheus@gmail.com</td>
+            <td>0002</td>
+            <td>1234
+                <button onclick="Botao2()" id="botao2" type="button" class="close" aria-label="Close">
+                    <span style="margin-left: 10px;" class="glyphicon glyphicon-remove"></span>
+                </button>
+                <button onclick="Alterar2()" id="botao2" type="button" class="close" aria-label="Close">
+                    <span  class="glyphicon glyphicon-repeat"></span>
+                </button>
+            </td>
+          </tr>
+          <tr id="tr3">
+            <td>000.000.000.00</td>
+            <td>Gabriel</td>
+            <td>(00)00000-0000</td>
+            <td>Gabriel@gmail.com</td>
+            <td>0003</td>
+            <td>1234
+                <button onclick="Botao3()" id="botao3" type="button" class="close" aria-label="Close">
+                    <span style="margin-left: 10px;" class="glyphicon glyphicon-remove"></span>
+                </button>
+                <button onclick="Alterar3()" id="botao3" type="button" class="close" aria-label="Close">
+                    <span  class="glyphicon glyphicon-repeat"></span>
+                </button>
+            </td>
+          </tr>
+          <tr id="tr4">
+            <td>000.000.000.00</td>
+            <td>João</td>
+            <td>(00)00000-0000</td>
+            <td>João@gmail.com</td>
+            <td>0004</td>
+            <td>1234
+                <button onclick="Botao4()" id="botao4" type="button" class="close" aria-label="Close">
+                    <span style="margin-left: 10px;" class="glyphicon glyphicon-remove"></span>
+                </button>
+                <button onclick="Alterar4()" id="botao4" type="button" class="close" aria-label="Close">
+                    <span  class="glyphicon glyphicon-repeat"></span>
+                </button>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+</div> <br><br>
+<div class="ContainerDiv">
+
+    
+    <form id="add">
+        <p class="Titulos">Adicionar Responsável</p> 
+        <label for="code">
+          <span class="SubTitulos">CPF: </span>
+          <input type="text" id="codigo" name="codigo">      
+        </label><br>
+      
+        <label for="name">
+          <span class="SubTitulos">Nome: </span>
+          <input type="text" id="nameProduct" name="nameProduct">      
+        </label><br>
+      
+        <label for="Ingridients">
+         <span class="SubTitulos">Telefone: </span>
+         <input type="text" id="ingridients" name="ingridients">      
+        </label><br>
+      
+        <label for="price">
+          <span class="SubTitulos">Email: </span>
+           <input type="email" id="price" name="price">      
+        </label><br> 
+        
+        <label for="price">
+            <span class="SubTitulos">Login: </span>
+             <input type="email" id="price" name="price">      
+        </label><br>
+         
+        <label for="price">
+            <span class="SubTitulos">Senha: </span>
+             <input type="email" id="price" name="price">      
+        </label><br>  
+        
+        
+        <button class="btn btn-primary">Adicionar</button>
+      </form>
+      <br><br>
+        <form id="alt">
+        <p class="Titulos">Alterar Dados do Responsável</p>
+        <label for="code">
+            <span class="SubTitulos">CPF: </span>
+            <input type="text" id="codigo" name="codigo">      
+          </label><br>
+        
+          <label for="name">
+            <span class="SubTitulos">Nome: </span>
+            <input type="text" id="nameProduct" name="nameProduct">      
+          </label><br>
+        
+          <label for="Ingridients">
+           <span class="SubTitulos">Telefone: </span>
+           <input type="text" id="ingridients" name="ingridients">      
+          </label><br>
+        
+          <label for="price">
+            <span class="SubTitulos">Email: </span>
+             <input type="email" id="price" name="price">      
+          </label><br> 
+          
+          <label for="price">
+              <span class="SubTitulos">Login: </span>
+               <input type="email" id="price" name="price">      
+          </label><br>
+           
+          <label for="price">
+              <span class="SubTitulos">Senha: </span>
+               <input type="email" id="price" name="price">      
+          </label><br>  
+          <button class="btn btn-primary">Alterar</button>
+</div>
+</div>
+
+
+
+</body>
+
+<script src="Js/gerenciaprodutos.js" ></script>
+</html>
+
+

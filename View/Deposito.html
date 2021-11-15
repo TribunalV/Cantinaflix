@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Depósito</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="Estilos/main2.css">
+  <link rel="stylesheet" href="Estilos/EstiloPerfil.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+ 
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a><span class="glyphicon glyphicon-usd"></span> R$ 100,00</a></li>
+          <li><a href="GerenciarAlunos.html"><span class="glyphicon glyphicon-user"></span> Gerenciar Alunos Relacionados</a></li>
+          <li><a href="GerenciarProdutosResp.html"><span class="glyphicon glyphicon-cutlery"></span> Gerenciar Produtos</a></li>
+          <li><a href="Deposito.html"><span class="glyphicon glyphicon-credit-card"></span> Depósito</a></li>    
+          <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>  
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br><br><br>
+
+
+
+<div class="ContainerPerfil">
+<div class="ContainerDiv">
+    <page-overlay>
+        <deposit-modal>
+          <h1>Deposite!</h1> <br><br>
+          <ul class="payment-selection">
+            <li data-payment="card" class="payment-entity selected">Débito</li>
+            <li data-payment="paysafe" class="payment-entity">Crédito</li>
+            <li data-payment="neteller" class="payment-entity"><a href="#">PIX</a></li>
+          </ul>
+          <label>
+
+            <span class="SubTitulos">Informe a matrícula do Aluno: </span>
+            <input type="text" id="matricula" name="matricula"> <br>
+            </label><br><br>
+            <span>Nome do Titular: </span>
+            <input type="text" placeholder="Nome" required="">
+          </label>
+          <section class="provider-section card">
+            <label>
+              <span>Número do cartão</span>
+              <input type="text" placeholder="1111 2222 3333 4444" size="16" maxlength="16">
+              <a class="add-new-card" href="">+ Salvar cartão</a>
+            </label>
+            <div class="inline">
+              <label>
+                <span>Data de vencimento:</span>
+                <input type="text" placeholder="00/00" size="5" maxlength="5">
+              </label>
+              <label>
+                <span>CVV</span>
+                <input type="text" placeholder="123" size="3" maxlength="3">
+              </label>
+            </div>
+            <label>
+                <span>Valor: </span>
+                <input type="text" placeholder="0.00" required="">
+            </label>
+
+          <br><br>
+          <button type="button" class="btn btn-primary">Depositar</button>
+        
+        </deposit-modal>
+      </page-overlay>
+
+</div>
+</div> <br>
+
+<div class="ContainerPerfil">
+
+  <div class="ContainerDiv">
+ 
+    <p class="Titulos">Consultar Depositos Anteriores</p>
+    <p class="SubTitulos">Informe a matrícula do Aluno</p>
+    <label for="matricula"> 
+      <span class="SubTitulos">Matrícula: </span>
+      <input type="text" id="matricula" name="matricula"> <br>
+    </label><br><br>
+
+    <p class="SubTitulos">Informe a Data a data que deseja consultar </p>
+    <label>
+      <span class="SubTitulos">Data requerida: </span>
+      <input type="date" id="dataConsumo" name="dataConsumo">
+    </label><br><br><br><br>
+
+
+   <p class=""><b>Clique no botão abaixo para mostrar os depósitos realizados</p> </b>
+   <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Mostrar</button>
+   <div id="demo" class="collapse"><b> Você depositou: R$100,00, no dia 30/08</b></div>
+  </div>
+</div>   
+
+<br><br>
+
+
+</form>
+
+</div>
+
+</body>
+</html>

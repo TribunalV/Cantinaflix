@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gerenciar Produtos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="Estilos/main2.css">
+  <link rel="stylesheet" href="Estilos/EstiloPerfil.css">
+ 
+  
+ 
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="ConsultarSaldo.html"><span class="glyphicon glyphicon-usd"></span> Consultar Saldo</a></li>
+        <li><a href="GerenciarProdutos.html"><span class="glyphicon glyphicon-cutlery"></span> Gerenciar Produtos</a></li>
+        <li><a href="GerenciarResponsavel.html"><span class="glyphicon glyphicon-user"></span> Gerenciar Responsáveis</a></li>
+        <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br><br><br>
+
+
+
+<div class="ContainerPerfil">
+<div class="ContainerDiv">
+    <p class="Titulos"> Tabela de Produtos </p> 
+    <table class="table table-dark">
+        <tbody>
+          <tr>
+            
+            <th>Fotos</th>
+            <th>Produtos</th>
+            <th>Código</th>
+            <th>Preço</th>
+          </tr>
+          <tr id="tr1">
+            
+            <td><img style="width: 90px;" src="Recursos/1.jpg" alt=""></td>
+            <td>Brownie</td>
+            <td>001</td>
+            <td>R$ 5,00
+                <button onclick="Botao1()" id="botao1" type="button" class="close" aria-label="Close">
+                    <span style="margin-left: 10px;" class="glyphicon glyphicon-remove"></span>
+                </button>
+                <button onclick="Bloquear1()" id="botao1" type="button" class="close" aria-label="Close">
+                   <span style="margin-left: 10px;" class="glyphicon glyphicon-ban-circle"></span>
+                </button>
+                <button onclick="Alterar1()" id="botao1" type="button" class="close" aria-label="Close">
+                    <span  class="glyphicon glyphicon-repeat"></span>
+                </button>
+                
+            </td>
+          </tr>
+          <tr id="tr2">
+            
+            <td><img style="width: 90px;" src="Recursos/2.jpg" alt=""></td>
+            <td>Cachorro Quente</td>
+            <td>002</td>
+            <td>R$ 5,00
+                <button onclick="Botao2()" id="botao2" type="button" class="close" aria-label="Close">
+                    <span style="margin-left: 10px;" class="glyphicon glyphicon-remove"></span>
+                </button>
+                <button onclick="Bloquear2()" id="botao2" type="button" class="close" aria-label="Close">
+                   <span style="margin-left: 10px;" class="glyphicon glyphicon-ban-circle"></span>
+                </button>
+                <button onclick="Alterar2()" id="botao2" type="button" class="close" aria-label="Close">
+                    <span  class="glyphicon glyphicon-repeat"></span>
+                </button>
+            </td>
+          </tr>
+          <tr id="tr3">
+            
+            <td><img style="width: 90px;" src="Recursos/3.png" alt=""></td>
+            <td>Coxinha</td>
+            <td>002</td>
+            <td>R$ 5,00
+                <button onclick="Botao3()" id="botao3" type="button" class="close" aria-label="Close">
+                    <span style="margin-left: 10px;" class="glyphicon glyphicon-remove"></span>
+                </button>
+                <button onclick="Bloquear3()" id="botao3" type="button" class="close" aria-label="Close">
+                   <span style="margin-left: 10px;" class="glyphicon glyphicon-ban-circle"></span>
+                </button>
+                <button onclick="Alterar3()" id="botao3" type="button" class="close" aria-label="Close">
+                    <span  class="glyphicon glyphicon-repeat"></span>
+                </button>
+            </td>
+          </tr>
+          <tr id="tr4">
+            
+            <td><img style="width: 90px;" src="Recursos/4.jpeg" alt=""></td>
+            <td>Hamburguer</td>
+            <td>003</td>
+            <td>R$ 5,00
+                <button onclick="Botao4()" id="botao4" type="button" class="close" aria-label="Close">
+                    <span style="margin-left: 10px;" class="glyphicon glyphicon-remove"></span>
+                </button>
+                <button onclick="Bloquear4()" id="botao4" type="button" class="close" aria-label="Close">
+                   <span style="margin-left: 10px;" class="glyphicon glyphicon-ban-circle"></span>
+                </button>
+                <button onclick="Alterar4()" id="botao4" type="button" class="close" aria-label="Close">
+                    <span  class="glyphicon glyphicon-repeat"></span>
+                </button>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+</div> <br><br>
+<div class="ContainerDiv">
+
+    
+    <form id="add">
+        <p class="Titulos">Adicionar Produtos</p> 
+        <label for="code">
+          <span class="SubTitulos">Código: </span>
+          <input type="text" id="codigo" name="codigo">      
+        </label><br>
+      
+        <label for="name">
+          <span class="SubTitulos">Nome do Produto: </span>
+          <input type="text" id="nameProduct" name="nameProduct">      
+        </label><br>
+      
+        <label for="Ingridients">
+         <span class="SubTitulos">Ingredientes: </span>
+         <input type="text" id="ingridients" name="ingridients">      
+        </label><br>
+      
+        <label for="price">
+          <span class="SubTitulos">Preço: </span>
+           <input type="text" id="price" name="price">      
+        </label><br>      
+        
+        <input style="background-color: rgba(34, 32, 32, 0);border:none;" type="file" class="form-control-file" id="exampleFormControlFile1">
+
+        
+        <button class="btn btn-primary">Adicionar</button>
+      </form>
+      <br><br>
+        <form id="alt">
+        <p class="Titulos">Alterar Dados do Produto</p>
+        <label for="code">
+            <span class="SubTitulos">Código: </span>
+            <input type="text" id="codigo" name="codigo">      
+          </label><br>
+        
+          <label for="name">
+            <span class="SubTitulos">Nome do Produto: </span>
+            <input type="text" id="nameProduct" name="nameProduct">      
+          </label><br>
+        
+          <label for="Ingridients">
+           <span class="SubTitulos">Ingredientes: </span>
+           <input type="text" id="ingridients" name="ingridients">      
+          </label><br>
+        
+          <label for="price">
+            <span class="SubTitulos">Preço: </span>
+             <input type="text" id="price" name="price">      
+          </label><br>      
+          
+          <input style="background-color: rgba(34, 32, 32, 0);border:none;" type="file" class="form-control-file" id="exampleFormControlFile1">
+          
+           
+          <button class="btn btn-primary">Alterar</button>
+      </form>
+</div>
+</div>
+
+
+
+</body>
+
+<script src="Js/gerenciaprodutos.js" ></script>
+</html>
+
+
